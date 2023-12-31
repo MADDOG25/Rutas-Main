@@ -31,10 +31,8 @@ export default function RootLayout({
       const splitPath = pathNameActual.split("/")
     return `/${splitPath[1]}${splitPath[2]?`/${splitPath[2]}`:''}`
   }
-  const pathBusqueda = pathNameSpliteado()
+  const pathBusqueda = pathNameSpliteado()     
   const sectionactual = ["/Inicio", "/Inicio/routes", "/Inicio/employees", "/Inicio/vehicle", "/Inicio/court", "/Inicio/product"].indexOf(pathBusqueda)
-
-
 
   return (
       <div className={`${inter.className} grid min-h-screen items-center justify-between text-[#000] `} style={{gridTemplateColumns: "auto auto 1fr"}}>
